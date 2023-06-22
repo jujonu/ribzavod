@@ -1,0 +1,437 @@
+body, html{
+    padding:0;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.wrap{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 15px 0px 15px;
+}
+
+.wrap img{
+    width: 248px;
+    height: 150px;
+    margin: 10px;
+}
+
+.logo{
+    display:flex;
+    flex-direction: row;
+    margin: 10px;
+    left: 0;
+}
+
+.logo h1{
+    font-size: 22px;
+}
+
+.logo p{
+    margin-top: 20px;
+    font-weight: 600;
+    color: #29166f;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #29166f;
+    transition: 1.5s;
+}
+
+.logo a:hover{
+    transition: 1.5s;
+    color:gray;
+}
+
+.site-title{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-rod{
+    display: flex;
+}
+
+.info{
+    display:flex;
+    flex-direction: column;
+    margin-top: 10px;
+    color: #29166f;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.contacts a{
+    text-decoration: none;
+    color: #29166f;
+    font-weight: 600;
+    transition: 1.5s;
+}
+
+.contacts a:hover{
+    transition: 1.5s;
+    color:gray;
+}
+
+.info h1{
+    font-size: 22px;
+}
+
+
+.bar {
+    display:flex;
+    flex-direction: row;
+    background-color: #29166f;
+    height: 80px;
+    align-items: center;
+}
+
+.bar ol a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.bar ol a:hover{
+    color:aqua;
+    transition: 0.5s;
+}
+
+footer {
+  background-color: rgb(235, 235, 235);
+  padding-bottom: 40px;
+}
+
+footer p{
+    margin: 0;
+    bottom: 0;
+}
+
+.flex-row{
+    padding-top: 50px;
+    display:flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: center;
+}
+
+.adres{
+    width: 30%;
+}
+
+.adres p{
+    margin: 0;
+    color:#9ba08e;
+    font-size: 14px;
+}
+
+.adres h1{
+    margin-top:0px;
+    color:black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.links a{
+    color:gray;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.links a:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact span img{
+    
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.form a{
+  text-decoration: none;
+  color:gray;
+  transition: .5s;
+}
+
+.form a:hover{
+  text-decoration: none;
+  color:black;
+  transition: .5s;
+}
+  
+  /* При расчете размеров инпутов учитываем внутренние отступы и границы */
+  input,
+  textarea {
+    box-sizing: border-box;
+  }
+
+  /* Стили самой формы */
+  .content {
+    display: flex; /* делаем колонки в ряд */
+    align-items: center; /* выравниваем по центру */
+    justify-content: space-between; /* колонки растянутся на всю ширину */
+    background: #fff;
+    padding: 40px;
+    border-radius: 5px;
+  }
+  
+  /* Стили левой колонки */
+  .left-side {
+    width: 25%; /* занимает 25% общей ширины */
+    height: 100%; /* растягиваем на всю высоту */
+    position: relative; /* позиционирование относительное (для ::before) */
+    display: flex;
+    flex-direction: column; /* внутри элементы располагаем в колонку */
+  }
+  
+  /* Стили разделительной линии между левой и правой колонкой */
+  .left-side::before {
+    content: ""; /* контент нам не нужен */
+    position: absolute; /* позиционируем относительно .left-side */
+    height: 70%; /* высота 70% от .left-side */
+    width: 2px; /* ширина 2px */
+    background: #afafb6;
+    right: -15px; /* позиционируем справа + отступ 15px (справа) */
+    top: 50%; /* выравниваем по центру */
+    transform: translateY(-50%); /* выравниваем по центру */
+  }
+  
+  /* Стили правой колонки */
+  .right-side {
+    width: 75%; /* занимает 75% общей ширины */
+    margin-left: 75px;
+  }
+  
+  /* Элементы левой колонки: адрес, телефон, email */
+  .details {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Общие стили для иконок */
+  .details i {
+    font-size: 25px; /* задаем размер */
+    color: #3e2093; /* задаем цвет */
+    margin-bottom: 10px;
+  }
+  
+  /* Стили для заголовков левой колонки */
+  .topic {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px; /* отступ снизу 7px */
+  }
+  
+  /* Стили для текста левой колонки */
+  .text-one,
+  .text-two {
+    font-size: 14px;
+    color: #afafb6;
+  }
+  
+  /* Заголовок правой колонки */
+  .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+    margin-bottom: 10px;
+  }
+  
+  /* Текст правой колонки */
+  .right-side p {
+    margin-bottom: 20px;
+  }
+  
+  /* Контейнер для input'ов формы */
+  .input-box {
+    height: 50px; /* по сути задаем высоту input'а */
+    width: 100%; /* ширина на всю ширину правой колонки (с учетом padding) */
+    margin-bottom: 20px; /* отступаем снизу 20px */
+  }
+  
+  /* Стили для input и textarea (поле сообщение) */
+  .input-box input,
+  .input-box textarea {
+    height: 100%; /* растягиваем на всю высоту контейнера 50px */
+    width: 100%; /* растягиваем на всю ширину */
+    border: none; /* убираем внешние края */
+    border-radius: 5px; /* скругляем края */
+    background: #f0f1f8; /* задаем цвет фона */
+    padding: 0 20px; /* отступ справа и слева 20px */
+  }
+  
+  /* Отдельно стилизуем поле сообщение */
+  .input-box textarea {
+    resize: none; /* чтобы нельзя было менять высоту */
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Это контейнер для поля сообщение */
+  .message-box {
+    min-height: 110px; /* минимальная высота 110px */
+  }
+  
+  /* Стили для контейнера кнопки */
+  .button {
+    display: inline-block; /* делаем блочно-строчный элемент */
+  }
+  
+  /* Стили для самой кнопки */
+  .button input[type="button"] {
+    color: #fff;
+    font-size: 18px;
+    background: #3e2093;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.2s; /* чтобы плавно менялся цвет при наведении (:hover) */
+  }
+  
+  /* Меняем цвет фона при наведении на кнопку */
+  .button input[type="button"]:hover {
+    background: rgb(0, 0, 207);
+  }
+
+  @media (max-width: 800px) {
+    /* Теперь форма (правая колонка) будет сверху, а элементы (левая колонка) снизу */
+    .content {
+      height: 100%;
+      flex-direction: column-reverse; /* располагаем в колонку и реверсивно */
+    }
+  
+    /* Внутри левой колонки внутренние элементы располагаем в ряд */
+    .left-side {
+      margin-top: 50px;
+      flex-direction: row; /* располагаем элементы (адрес, телефон, email) в ряд */
+      width: 100%; /* левая колонка на всю ширину */
+      justify-content: center;
+      flex-wrap: wrap; /* перенос элементов, если не хватит места */
+    }
+    .details {
+      margin-right: 20px;
+    }
+    .details:last-child {
+      margin-right: 0;
+    }
+  
+    /* Убираем разделительную линию */
+    .left-side::before {
+      display: none;
+    }
+  
+    /* Правая колонка теперь на всю ширину и не имеет отступа слева */
+    .right-side {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #29166f;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 10px;
+  }
+  
+  .nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    transition: 1s;
+  }
+
+  .nav a:hover{
+    color:aqua;
+    transition: 1s;
+  }
+
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+    
+    .burger-menu {
+      display: block;
+    }
+    
+    .burger-menu span {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      margin: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .burger-menu.active span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .burger-menu.active span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    
+    .burger-menu.active span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  @media only screen and (max-width: 768px) { .wrap { flex-direction: column; align-items: center; } .wrap img { width: 100%; height: auto; margin: 10px 0; } .logo { justify-content: center; text-align: center; } .logo h1 { font-size: 18px; } .info { align-items: center; text-align: center; margin-top: 20px; } .info h1 { font-size: 18px; } .contacts { margin-top: 20px; align-items: center; text-align: center; } .contacts a { font-size: 16px; } .logo h1{ font-size: 14px;} .logo p{ display: none;} .adres h1{font-size: 12px; } .links{ font-size: 12px;} .form{ font-size: 12px;} .adres p{font-size: 12px; }}
